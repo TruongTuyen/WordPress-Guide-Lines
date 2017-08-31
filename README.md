@@ -26,7 +26,7 @@ If you are adding theme support for search-form then you shouldn't use searchfor
 ## Prefixing styles/scripts handles: ##
   1. Only custom scripts and styles need handle prefix.
   2. Third party scripts/styles must not have handle prefixed. For reference, check: https://github.com/grappler/wp-standard-handles.	
-## Using core scripts: Datepicker :##
+## Using core scripts: Datepicker : ##
 WordPress Core has jquery-ui datepicker bundled in core, so, if you want to use datepicked, simply use that one. 
 o	Do not enqueue extra script for datepicked.
 ## Using core functions: ##
@@ -34,7 +34,7 @@ Pagination : You can just use function the_posts_pagination(), it will display l
 ## Prefixing: ##
 Functions: All functions must be prefixed with theme_slug.
   Ref: http://themereview.co/prefix-all-the-things/.
-## Commented Code:##
+## Commented Code: ##
 Remove all commented codes in production version of theme.
 ## Plugin Territory: ##
 Login Page manipulation : Manipulating login page, in this case adding logo, falls under plugin territory, which means, this functionality needs to be removed from theme and added in via plugin.
@@ -65,9 +65,9 @@ Theme should not produce any error OR norices.
 inc/extras.php file. echo '<link rel="pingback" href="'. bloginfo( 'pingback_url' ) . '">';
 ##	Unused Bundled Scripts ##
 ##	Run the code sniffer : ##
-https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards
-phpcs --standard=WordPress PATH_TO_THE_PROJECT >> PATH_TO_SAVE_FILE
-Ex: c:\codesniffer>phpcs --standard=WordPress C:\xampp\htdocs\pest-guard\wp-content\
+  1. https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.
+  2. phpcs --standard=WordPress PATH_TO_THE_PROJECT >> PATH_TO_SAVE_FILE
+  3. Ex: c:\codesniffer>phpcs --standard=WordPress C:\xampp\htdocs\pest-guard\wp-content\
 themes\pest-guard >> C:\xampp\htdocs\pest-guard\wp-content\themes\pest-guard\cod
 esniffer.txt
 ## Incorrect Locale file: ##
@@ -82,17 +82,17 @@ Instead of writing your own excerpt function, use the excerpt_length filter hook
 ## Categories Display: ##
   1. Themes should display all of the user-selected categories for a post. There's no real design limitation in this theme where this should be limited to a single category.
   2. Additionally, you don't need the category code in content-page.php because pages don't support categories.
-## Post Date:##
+## Post Date: ##
 Because you're using the core the_date() function, the date will not be output when multiple posts have the same date on the page. It's only output for the first post. Following posts show "Date: ".
 o	Instead, use echo get_the_date().
-## Stying Avatars:##
+## Stying Avatars: ##
 Avatars in comments are stretched. They're currently set at 32 x 32 px, but the theme stretches them to much larger. See screenshot.
 ## Stying Galleries: ##
 When using the [gallery] shortcode, it's not adhering to the columns it's supposed to be in. The screenshot should be 3 columns. Instead, everything is lined up in a single column.
 ## Outputting tags and categories : ##
 When outputting post tags and categories, use an appropriate core function, such as get_the_term_list(): https://codex.wordpress.org/Function_Reference/get_the_term_list
 ## Styling: Lists in comment text : ##
-Make sure to account for <ul> and <ol> lists when used within comment text. Right now, the lists items are missing bullets and have huge left margins. See screenshot.
+Make sure to account for &lt;ul&gt; and &lt;ol&gt; lists when used within comment text. Right now, the lists items are missing bullets and have huge left margins. See screenshot.
 ## Missing pingbacks/trackbacks : ##
 Themes must support all core comment types (comment, pingback, and trackback). It'd be even better if it supported custom comment types too (though not a requirement anywhere).
 o	Make sure to account for pingbacks and trackbacks too.
