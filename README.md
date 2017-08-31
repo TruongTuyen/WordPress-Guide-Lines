@@ -1,11 +1,14 @@
 # WordPress-Guide-Lines
-=	Required Plugins: =
+## Required Plugins: ##
 Theme can recommend plugins but not make them required. This is most is your submitting theme in WordPress.org but for theme forest it's recommended.
-= Screenshot Issues: =
+# Screenshot Issues: #
 The screenshot should be of the actual theme as it appears with default options, not a logo or mockup. Screenshot size should be 1200x900, to account for HiDPI displays. Any 4:3 image size is acceptable, but 1200x900 is preferred.
-•	Readme File: For proper readme file, you can read more at https://make.wordpress.org/themes/2014/07/08/proper-copyrightlicense-attribution-for-themes/.
-•	Third party Resources: Make sure you first have permission to distribute third party resources. And, make sure to list the copyright and license for each in your readme.
-•	Other Framewords/Plugins: If you have used any frameworks, you need to keep them updated.
+## Readme File: ##
+For proper readme file, you can read more at https://make.wordpress.org/themes/2014/07/08/proper-copyrightlicense-attribution-for-themes/.
+## Third party Resources: ##
+Make sure you first have permission to distribute third party resources. And, make sure to list the copyright and license for each in your readme.
+## Other Framewords/Plugins: ##
+If you have used any frameworks, you need to keep them updated.
 •	Admin Menu: Themes are not allowed to add anything in admin bar.
 •	Theme Options: There is no need to add Theme Options page since all options are already in customizer.
 •	Custom Logo: As of WordPress version 4.5, logo can be added via theme support and in included in core, so you need to use it rather than adding using custom header. More info: https://make.wordpress.org/core/2016/03/10/custom-logo/. Also, remove default logo image.
