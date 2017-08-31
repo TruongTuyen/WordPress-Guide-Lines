@@ -1,7 +1,7 @@
 # WordPress-Guide-Lines
 ## Required Plugins: ##
 Theme can recommend plugins but not make them required. This is most is your submitting theme in WordPress.org but for theme forest it's recommended.
-## Screenshot Issues:##
+## Screenshot Issues: ##
 The screenshot should be of the actual theme as it appears with default options, not a logo or mockup. Screenshot size should be 1200x900, to account for HiDPI displays. Any 4:3 image size is acceptable, but 1200x900 is preferred.
 ## Readme File: ##
 For proper readme file, you can read more at https://make.wordpress.org/themes/2014/07/08/proper-copyrightlicense-attribution-for-themes/.
@@ -24,9 +24,8 @@ Make every string strings translation ready.  https://gist.github.com/emiluzelac
 ## Search Form issue: ##
 If you are adding theme support for search-form then you shouldn't use searchform.php. Choose one or the other.
 ## Prefixing styles/scripts handles: ##
-Only custom scripts and styles need handle prefix
-Third party scripts/styles must not have handle prefixed
-For reference, check: https://github.com/grappler/wp-standard-handles.	
+  1. Only custom scripts and styles need handle prefix.
+  2. Third party scripts/styles must not have handle prefixed. For reference, check: https://github.com/grappler/wp-standard-handles.	
 ## Using core scripts: Datepicker :##
 WordPress Core has jquery-ui datepicker bundled in core, so, if you want to use datepicked, simply use that one. 
 o	Do not enqueue extra script for datepicked.
