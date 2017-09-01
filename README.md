@@ -36,6 +36,28 @@ Functions: All functions must be prefixed with theme_slug.
   Ref: http://themereview.co/prefix-all-the-things/.
 ## Commented Code: ##
 Remove all commented codes in production version of theme.
+## Theme Unit Test ##
+  1. Please make sure all default Theme Unit Test content is formatted properly
+  2. How to test the blog/posts layout/functionality - Import the Theme Unit Test [http://codex.wordpress.org/Theme_Unit_Test]
+      * All default content is formatted properly.
+      * Posts display correctly, with no apparent visual problems or errors.
+      * Posts display in correct order.
+      * Post has no title, but it still must link to the single post view somehow.
+      * Page navigation displays and works correctly.
+      * As "sticky posts" are a core feature, the theme should style and display them appropriately.
+      * Lack of body text should not adversely impact the layout.
+      * Theme must incorporate both the "Tag" and the "Category" taxonomies in some manner.
+      * Floats are cleared properly for floated element (thumbnail image) at the end of the post content.
+  3. Custom widget areas must use the safety condition “is_active_sidebar” to ensure no naming conflict with other plugins.
+  4. Users should be able to view a submenu without being redirected to a new page (Mobile View) : [http://envato.d.pr/xQw8qv/2iHSqYYf]
+  5. When including fonts in your theme, DO NOT use @import. 
+      Using @import blocks parallel downloads, which means the browser has to wait for the imported file to finish downloading before it        starts downloading the rest of the content.
+  6. Scripts and styles should not be hardcoded anywhere in your theme or added any other way but with wp_enqueue_* hook and to be added from the functions file. This includes custom JS/CSS. For inline styles use: https://developer.wordpress.org/reference/functions/wp_add_inline_style/ and for scripts https://developer.wordpress.org/reference/functions/wp_add_inline_script/
+## Widgets ##
+  1. Please ensure sure all default WordPress widgets display properly in all widgetized areas.
+  2. You can check with the Monster Widget WordPress plugin [https://wordpress.org/plugins/monster-widget/]
+## Premium Plugins ##
+  Please include third party / premium plugins in the download and install via TGM PA as pre-packaged. Eg: Visual Composer, Revolution Slider etc.
 ## Plugin Territory: ##
 Login Page manipulation : Manipulating login page, in this case adding logo, falls under plugin territory, which means, this functionality needs to be removed from theme and added in via plugin.
 ## Using core functionality: ##
