@@ -39,6 +39,7 @@ Remove all commented codes in production version of theme.
 ## Theme Unit Test ##
   1. Please make sure all default Theme Unit Test content is formatted properly
   2. How to test the blog/posts layout/functionality - Import the Theme Unit Test [http://codex.wordpress.org/Theme_Unit_Test]
+      * Download the test data from [http://wptest.io/]
       * All default content is formatted properly.
       * Posts display correctly, with no apparent visual problems or errors.
       * Posts display in correct order.
