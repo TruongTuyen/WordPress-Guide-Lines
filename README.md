@@ -157,3 +157,6 @@ Also, why are you creating custom widgets that are essentially the same as the c
 ## Need to run http://validator.w3.org for HTML validation ##
 ## Avoid using custom menu as much as possible ##
 ## Avoid using image resize using external functions ##
+## Screen Readers Testing ##
+  Screen readers are software programs that allow blind or visually impaired users to read the text that is displayed on the computer screen with a speech synthesizer or braille display. To test the WordPress theme for screen readers:
+  [https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/useful-tools/]
