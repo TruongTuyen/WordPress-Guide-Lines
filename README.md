@@ -165,3 +165,5 @@ No image placeholders, if user doesn't want an image, nothing should display. Th
 ## Scripts should not hard coded ##
  Scripts and styles should not be hardcoded anywhere in your theme or added any other way but with wp_enqueue_* hook and to be added from the functions file. This includes custom JS/CSS. 
 For inline styles use: https://developer.wordpress.org/reference/functions/wp_add_inline_style/ and for scripts https://developer.wordpress.org/reference/functions/wp_add_inline_script/
+## POT file should be updated ##
+Please ensure your .POT translation file is up to date. Having an outdated .POT file limits the translatable functionality of your theme, which will negatively affect international customers.
