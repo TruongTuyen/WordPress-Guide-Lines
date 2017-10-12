@@ -160,3 +160,8 @@ Also, why are you creating custom widgets that are essentially the same as the c
 ## Screen Readers Testing ##
   Screen readers are software programs that allow blind or visually impaired users to read the text that is displayed on the computer screen with a speech synthesizer or braille display. To test the WordPress theme for screen readers:
   [https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/useful-tools/]
+## Default Images ##
+No image placeholders, if user doesn't want an image, nothing should display. Theme still needs to work properly without them.
+## Scripts should not hard coded ##
+ Scripts and styles should not be hardcoded anywhere in your theme or added any other way but with wp_enqueue_* hook and to be added from the functions file. This includes custom JS/CSS. 
+For inline styles use: https://developer.wordpress.org/reference/functions/wp_add_inline_style/ and for scripts https://developer.wordpress.org/reference/functions/wp_add_inline_script/
