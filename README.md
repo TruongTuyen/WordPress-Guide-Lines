@@ -171,3 +171,9 @@ Please ensure your .POT translation file is up to date. Having an outdated .POT 
 ## Inconsistent prefixing: ##
 ## No image placeholders, if user doesn't want an image, nothing should display. Theme still needs to work properly without them. ##
 ## Please update Visual Composer plugin to the latest version. ##
+## Remove all extraneous text domains that are completely unrelated to the theme. ##
+Please note that packaged PHP libraries (i.e. TGMPA), frameworks, and plugin template text domains are relevant and therefore authorized.
+## No image placeholders ##
+if user doesn't want an image, nothing should display. Theme still needs to work properly without them.
+## Scripts Enque ##
+Scripts and styles should not be hardcoded anywhere in your theme or added any other way but with wp_enqueue_* hook and to be added from the functions file. This includes custom JS/CSS.
