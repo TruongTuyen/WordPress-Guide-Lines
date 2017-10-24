@@ -167,3 +167,8 @@ No image placeholders, if user doesn't want an image, nothing should display. Th
 For inline styles use: https://developer.wordpress.org/reference/functions/wp_add_inline_style/ and for scripts https://developer.wordpress.org/reference/functions/wp_add_inline_script/
 ## POT file should be updated ##
 Please ensure your .POT translation file is up to date. Having an outdated .POT file limits the translatable functionality of your theme, which will negatively affect international customers.
+## Incomplete rtl.css ##
+## Inconsistent prefixing: ##
+## No image placeholders, if user doesn't want an image, nothing should display. Theme still needs to work properly without them. ##
+## Please update Visual Composer plugin to the latest version. ##
+## Please ensure your .POT translation file is up to date. Having an outdated .POT file limits the translatable functionality of your theme, which will negatively affect international customers.##
