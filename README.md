@@ -165,8 +165,10 @@ No image placeholders, if user doesn't want an image, nothing should display. Th
 ## Scripts should not hard coded ##
  Scripts and styles should not be hardcoded anywhere in your theme or added any other way but with wp_enqueue_* hook and to be added from the functions file. This includes custom JS/CSS. 
 For inline styles use: https://developer.wordpress.org/reference/functions/wp_add_inline_style/ and for scripts https://developer.wordpress.org/reference/functions/wp_add_inline_script/
-## POT file should be updated ##
-Please ensure your .POT translation file is up to date. Having an outdated .POT file limits the translatable functionality of your theme, which will negatively affect international customers.
+## POT file ##
+should be updated. Please ensure your .POT translation file is up to date. Having an outdated .POT file limits the translatable functionality of your theme, which will negatively affect international customers.
+.POT file name should match the themes-slug.
+Theme can include an actual translation files, but it should not add the en_IN.mo or en_IN.po because English already implies.
 ## Incomplete rtl.css ##
 ## Inconsistent prefixing: ##
 ## No image placeholders, if user doesn't want an image, nothing should display. Theme still needs to work properly without them. ##
@@ -177,3 +179,19 @@ Please note that packaged PHP libraries (i.e. TGMPA), frameworks, and plugin tem
 if user doesn't want an image, nothing should display. Theme still needs to work properly without them.
 ## Scripts Enque ##
 Scripts and styles should not be hardcoded anywhere in your theme or added any other way but with wp_enqueue_* hook and to be added from the functions file. This includes custom JS/CSS.
+## You should avoid and not to hardcode custom body_class(). ##
+Main reason for this is being able to remove the class when needed i.e. child themes. What you can do 
+- https://gist.github.com/kailoon/d4d22c9204909dff21eb
+
+ref: http://themeshaper.com/2014/11/20/mastering-the-post_class-function/https://codex.wordpress.org/Function_Reference/body_class#Add_Classes_By_Filters
+## JavaScript files need to be placed at the bottom,##
+barring critical exclusion. [Modernizr, for instance] You can do this with the $in_footer argument of wp_enqueue_script.
+## Enqueue the Google fonts the right way https://gist.github.com/kailoon/e2dc2a04a8bd5034682c ##
+## Should spell "1 Comment": http://envato.d.pr/VevJQa/4qUwSfoz ##
+## Animations should be triggered independently: http://envato.d.pr/cjy7tq/4fVhMLge ##
+## Menu not accessible on mobile: http://envato.d.pr/gEq20y ##
+## Post date should correspond with the Date Format settings in Settings > General: http://envato.d.pr/k7KNM ##
+## Empty areas should not display ##
+if there is not any content assigned by users. Example(s):
+- http://envato.d.pr/Fpj6pF
+
