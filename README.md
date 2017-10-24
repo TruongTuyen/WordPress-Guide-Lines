@@ -171,4 +171,3 @@ Please ensure your .POT translation file is up to date. Having an outdated .POT 
 ## Inconsistent prefixing: ##
 ## No image placeholders, if user doesn't want an image, nothing should display. Theme still needs to work properly without them. ##
 ## Please update Visual Composer plugin to the latest version. ##
-## Please ensure your .POT translation file is up to date. Having an outdated .POT file limits the translatable functionality of your theme, which will negatively affect international customers.##
