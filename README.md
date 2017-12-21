@@ -210,3 +210,24 @@ Through out all the theme we need to use same prefix
 
 ## Escape ##
 Escape all translated strings to avoid malicious or malformed codes to be added into a .mo file and later injected into a page load when default strings are replaced. https://gist.github.com/emiluzelac/32d53ab85c05cda846ad61590588a7bb Example(s): http://envato.d.pr/6t9gbe/55zBvsYm
+
+## Inconsistency ##
+For consistency, submenus should be accessible on both desktop and mobile: http://envato.d.pr/PJtlip/3kpDrpdn http://envato.d.pr/BKC5aX/SW4qRKHF 
+2. The page title shouldn't display twice: http://envato.d.pr/xWJE3/1Mr4SNhl 
+3. http://envato.d.pr/MoBebA/jN0v7o0b - When including fonts in your theme, DO NOT use @import. Using @import blocks parallel downloads, which means the browser has to wait for the imported file to finish downloading before it starts downloading the rest of the content.
+
+## Child Theme Broken ##
+The provided child theme is broken http://envato.d.pr/6Kg20x/3UHcJfVr 
+2. These should be installed from the WordPress repo http://envato.d.pr/DbCd4l/1AdGWcHW 
+3. Custom widget areas must use the safety condition “is_active_sidebar” to ensure no naming conflict with other plugins.
+
+## Few More ##
+1. No image placeholders, if user doesn't want an image, nothing should display. Theme still needs to work properly without them. http://envato.d.pr/92O7TQ/1TXsrizP 
+2. Sticky post should be distinctly recognizable in some way in comparison to normal posts: http://envato.d.pr/CTeRqk/3yzzxxIo 
+3. Please add appropriate margin top when the admin bar is visible. Good read: https://www.sitepoint.com/getting-sticky-headers-wordpress-admin-bar-behave/ http://envato.d.pr/6Pd5lA/5ZW7RzRn 
+4. Please make sure all default Theme Unit Test content is formatted properly. example(s) and there are more: http://envato.d.pr/l6hHsQ/3LWBhHoK http://envato.d.pr/d0XaZ/UK8n0nvj http://envato.d.pr/mcZiTc/3LftWHyE How to test the blog/posts layout/functionality - Import the Theme Unit Test [http://codex.wordpress.org/Theme_Unit_Test] file and make sure that: - All default content is formatted properly. - Posts display correctly, with no apparent visual problems or errors. - Posts display in correct order. - Page navigation displays and works correctly. - As "sticky posts" are a core feature, the theme should style and display them appropriately. - Lack of body text should not adversely impact the layout. - Theme must incorporate both the "Tag" and the "Category" taxonomies in some manner. - Floats are cleared properly for floated element (thumbnail image) at the end of the post content. Reference link: https://wpthemetestdata.wordpress.com/ 
+5. Please ensure sure all default WordPress widgets display properly in all widgetized areas. You can check with the Monster Widget WordPress plugin [https://wordpress.org/plugins/monster-widget/]. http://envato.d.pr/uO8uEc/2NfhfHZ6 
+6. All theme text strings are to be translatable and properly escaped. https://gist.github.com/kailoon/01fa8e95d2e910e666c6 
+7. http://envato.d.pr/WyvMb6/5gr6Qi7Q Please include third party / premium plugins in the download and install via TGM PA as pre-packaged. Eg: Visual Composer, Revolution Slider etc. 
+8. Please remove personal api key - http://envato.d.pr/vx8wLi/3FUbwCS0
+9. Test how your theme design breakpoints across desktop, mobile, and tablet: http://design.google.com/resizer/ Default browser: - Chrome for macOS Sierra (the latest)
