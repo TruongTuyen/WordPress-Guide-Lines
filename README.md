@@ -194,4 +194,19 @@ barring critical exclusion. [Modernizr, for instance] You can do this with the $
 ## Empty areas should not display ##
 if there is not any content assigned by users. Example(s):
 - http://envato.d.pr/Fpj6pF
+## Sticky Posts ##
+Sticky post should be distinctly recognizable in some way in comparison to normal posts: http://envato.d.pr/qG38cQ
+## No placeholders ##
+No placeholders: http://envato.d.pr/Ms3v8A
+## Incomplete rtl.css ##
+Incomplete rtl.css
 
+http://envato.d.pr/3ZTb1y
+
+Remove rtl.css if your theme not supported RTL
+
+## Inconsistent prefixing: ##
+Through out all the theme we need to use same prefix
+
+## Escape ##
+Escape all translated strings to avoid malicious or malformed codes to be added into a .mo file and later injected into a page load when default strings are replaced. https://gist.github.com/emiluzelac/32d53ab85c05cda846ad61590588a7bb Example(s): http://envato.d.pr/6t9gbe/55zBvsYm
